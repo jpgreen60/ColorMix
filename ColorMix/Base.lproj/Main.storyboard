@@ -24,10 +24,24 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4eX-5B-teg">
-                                <rect key="frame" x="163" y="318" width="49" height="31"/>
+                                <rect key="frame" x="164" y="318" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="IdO-Xk-FRu"/>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="D5v-q5-djZ"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dbk-9V-BSr">
+                                <rect key="frame" x="164" y="376" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="nq4-Ee-IId"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JHj-Jo-0DN">
+                                <rect key="frame" x="164" y="435" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="RxW-ST-5uc"/>
                                 </connections>
                             </switch>
                         </subviews>
@@ -35,7 +49,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="blueSwitch" destination="JHj-Jo-0DN" id="0U2-2n-gfl"/>
                         <outlet property="colorView" destination="tqk-zt-Uwg" id="7HY-EU-fLE"/>
+                        <outlet property="greenSwitch" destination="Dbk-9V-BSr" id="Sqy-pu-2NQ"/>
+                        <outlet property="redSwitch" destination="4eX-5B-teg" id="VMS-UR-P7Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
