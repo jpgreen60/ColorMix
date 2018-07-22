@@ -14,10 +14,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var redSwitch: UISwitch!
     @IBOutlet weak var greenSwitch: UISwitch!
     @IBOutlet weak var blueSwitch: UISwitch!
+    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet weak var blueSlider: UISlider!
     
     @IBAction func switchChanged(_ sender: UISwitch) {
         updateColor()
     }
+    
+    @IBAction func sliderChanged(_ sender: UISlider) {
+        updateColor()
+    }
+    
     
     
     override func viewDidLoad() {
@@ -37,15 +45,15 @@ class ViewController: UIViewController {
         var blue: CGFloat = 0
         
         if redSwitch.isOn {
-            red = 1
+            red = CGFloat(redSlider.value)
         }
         
         if greenSwitch.isOn {
-            green = 1
+            green = CGFloat(greenSlider.value)
         }
         
         if blueSwitch.isOn {
-            blue = 1
+            blue = CGFloat(blueSlider.value)
         }
         
         let color = UIColor(red: red, green: green, blue: blue, alpha: 1)
