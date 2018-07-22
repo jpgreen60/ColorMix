@@ -23,6 +23,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func switchChanged(_ sender: UISwitch) {
+        if sender.isOn {
+            colorView.backgroundColor = .red
+        } else {
+            colorView.backgroundColor = .black
+        }
+    }
+    
 }
 
